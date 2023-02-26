@@ -4,6 +4,7 @@ mod mini_max_sum;
 mod plus_minus;
 // mod sock_merchant;
 mod between_two_sets;
+mod divisible_sum_pairs;
 mod time_conversion;
 
 #[cfg(test)]
@@ -37,5 +38,14 @@ mod tests {
     #[test]
     fn test_between_two_sets() {
         assert_eq!(between_two_sets::get_total_x(&[2, 4], &[16, 32, 96]), 3);
+    }
+
+    #[test]
+    fn test_divisible_sum_pairs() {
+        assert_eq!(divisible_sum_pairs::divisible_sum_pairs(
+            6,
+            3,
+            &[1, 3, 2, 6, 1, 2]
+        ), 5);
     }
 }
