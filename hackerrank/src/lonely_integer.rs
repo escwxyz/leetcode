@@ -15,3 +15,17 @@ pub fn lonely_integer(a: &[i32]) -> i32 {
 
     v[0]
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_01() {
+        assert_eq!(lonely_integer(&[1, 1, 2]), 2);
+    }
+    #[test]
+    fn test_02() {
+        assert_eq!(lonely_integer(&[0, 0, 1, 2, 1]), 2);
+    }
+}

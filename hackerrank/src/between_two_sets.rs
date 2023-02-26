@@ -17,3 +17,13 @@ pub fn get_total_x(a: &[i32], b: &[i32]) -> i32 {
     }
     result.len() as i32
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        assert_eq!(get_total_x(&[2, 4], &[16, 32, 96]), 3);
+    }
+}

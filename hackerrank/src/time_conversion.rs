@@ -14,3 +14,23 @@ pub fn time_conversion(s: &str) -> String {
         _ => panic!("Error"),
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_pm() {
+        assert_eq!(time_conversion("07:05:45PM"), String::from("19:05:45"));
+    }
+
+    #[test]
+    fn test_12_am() {
+        assert_eq!(time_conversion("12:05:32AM"), String::from("00:05:32"));
+    }
+
+    #[test]
+    fn test_12_pm() {
+        assert_eq!(time_conversion("12:05:32PM"), String::from("12:05:32"));
+    }
+}
