@@ -3,6 +3,7 @@ mod lonely_integer;
 mod mini_max_sum;
 mod plus_minus;
 // mod sock_merchant;
+mod between_two_sets;
 mod time_conversion;
 
 #[cfg(test)]
@@ -31,5 +32,10 @@ mod tests {
             time_conversion::time_conversion("12:05:32PM"),
             String::from("12:05:32")
         );
+    }
+
+    #[test]
+    fn test_between_two_sets() {
+        assert_eq!(between_two_sets::get_total_x(&[2, 4], &[16, 32, 96]), 3);
     }
 }
