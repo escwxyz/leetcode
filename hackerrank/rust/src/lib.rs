@@ -1,4 +1,5 @@
 mod caesar_cipher;
+mod design_pdf_viewer;
 mod diagonal_difference;
 mod electronics_shop;
 mod tower_breakers;

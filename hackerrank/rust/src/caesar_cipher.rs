@@ -13,20 +13,21 @@ const UPPER: [char; 26] = [
 
 #[allow(dead_code)]
 fn caesar_cipher(s: &str, k: i32) -> String {
+    let j = (k % 26) as usize;
     s.chars()
         .map(|s| {
-            let r = LOW.iter().enumerate().find(|&(_, &a)| a == s);
-            let u = UPPER.iter().enumerate().find(|&(_, &a)| a == s);
-            if let Some((p, _)) = r {
-                match p + ((k % 26) as usize) {
+            let r = LOW.iter().position(|&a| a == s);
+            let u = UPPER.iter().position(|&a| a == s);
+            if let Some(p) = r {
+                match p + j {
                     n if n <= 25 => LOW[n],
 
                     n if n > 25 => LOW[n - 26],
 
                     _ => panic!("Error"),
                 }
-            } else if let Some((p, _)) = u {
-                match p + ((k % 26) as usize) {
+            } else if let Some(p) = u {
+                match p + j {
                     n if n <= 25 => UPPER[n],
 
                     n if n > 25 => UPPER[n - 26],
