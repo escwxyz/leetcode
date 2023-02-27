@@ -1,3 +1,11 @@
+/**
+ * @param k - Cancellation threshhold
+ * @param a - Array of arrival times
+ * @returns "YES" or "NO"
+ *
+ * Challenge:
+ * https://www.hackerrank.com/challenges/angry-professor/problem
+ */
 export const angryProfessor = (k: number, a: number[]): string => {
 	return a.filter((v) => v <= 0).length >= k ? 'NO' : 'YES'
 }

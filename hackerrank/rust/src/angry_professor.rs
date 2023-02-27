@@ -1,4 +1,12 @@
 #[allow(dead_code)]
+/// Check if class is to be cancelled based on the arrival number of students
+///
+/// * `k`: Cancellation threshhold
+/// * `a`: Array of arrival times of students
+///
+/// Challenge:
+/// https://www.hackerrank.com/challenges/angry-professor/problem
+
 fn angry_professor(k: i32, a: &[i32]) -> String {
     let c = a.iter().filter(|&&v| v <= 0).count() as i32;
 

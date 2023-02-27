@@ -1,4 +1,5 @@
 mod angry_professor;
+mod cats_and_mouse;
 mod caesar_cipher;
 mod design_pdf_viewer;
 mod diagonal_difference;
