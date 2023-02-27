@@ -3,6 +3,7 @@ mod design_pdf_viewer;
 mod diagonal_difference;
 mod electronics_shop;
 mod tower_breakers;
+mod utopian_tree;
 // mod counting_valleys;
 mod between_two_sets;
 mod divisible_sum_pairs;
