@@ -17,11 +17,7 @@ export const getMoneySpent = (
 		.filter((v) => v < b)
 		.map((v) => {
 			const d = drives.filter((l) => l + v <= b)
-			if (d.length == 0) {
-				return 0
-			} else {
-				return v + Math.max.apply(null, d)
-			}
+			return d.length == 0 ? 0 : v + Math.max.apply(null, d)
 		})
 
 	return r.every((v) => v == 0) ? -1 : Math.max.apply(null, r)
