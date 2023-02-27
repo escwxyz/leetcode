@@ -1,3 +1,13 @@
+/**
+ * @param keyboards - Price array of keyboard
+ * @param drives - Price array of drive
+ * @param b - Total budget
+ * @returns Money spent or -1 if impossible
+ */
+
+// Challenges:
+// https://www.hackerrank.com/challenges/electronics-shop/problem
+
 export const getMoneySpent = (
 	keyboards: number[],
 	drives: number[],
