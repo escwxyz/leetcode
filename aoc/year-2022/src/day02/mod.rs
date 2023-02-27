@@ -36,3 +36,14 @@ pub fn calculate() -> (u32, u32) {
 
     (sum_one, sum_two)
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_day02() {
+        let result = calculate();
+        assert_eq!((12855, 13726), result);
+    }
+}

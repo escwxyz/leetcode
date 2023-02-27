@@ -55,3 +55,14 @@ pub fn calculate() -> (u32, u32) {
 
     (one, two)
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_day04() {
+        let result = calculate();
+        assert_eq!((475, 825), result);
+    }
+}

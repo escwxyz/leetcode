@@ -51,3 +51,15 @@ pub fn calculate() -> (u32, u32) {
         )
     }
 }
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_day01() {
+        let (most, top_three) = calculate();
+        assert_eq!(69912, most);
+        assert_eq!(208180, top_three);
+    }
+}
