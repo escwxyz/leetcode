@@ -1,3 +1,6 @@
+// Challenge:
+// https://www.hackerrank.com/challenges/one-week-preparation-kit-lonely-integer/problem
+
 use std::collections::HashSet;
 #[allow(dead_code)]
 pub fn lonely_integer(a: &[i32]) -> i32 {

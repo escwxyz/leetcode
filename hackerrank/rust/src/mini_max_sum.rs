@@ -1,3 +1,6 @@
+// Challenge:
+// https://www.hackerrank.com/challenges/one-week-preparation-kit-mini-max-sum/problem
+
 #[allow(dead_code)]
 pub fn mini_max_sum(arr: &[i32]) {
     let mut a: Vec<i64> = Vec::new();

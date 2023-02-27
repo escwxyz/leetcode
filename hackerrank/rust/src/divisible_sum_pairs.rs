@@ -1,3 +1,6 @@
+// Challenge:
+// https://www.hackerrank.com/challenges/divisible-sum-pairs/problem
+
 #[allow(dead_code)]
 pub fn divisible_sum_pairs(n: i32, k: i32, ar: &[i32]) -> i32 {
     let mut count: i32 = 0;

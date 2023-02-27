@@ -1,3 +1,6 @@
+// Challenge:
+// https://www.hackerrank.com/challenges/between-two-sets/problem
+
 #[allow(dead_code)]
 pub fn get_total_x(a: &[i32], b: &[i32]) -> i32 {
     let mut arr_a = Vec::from(a);
