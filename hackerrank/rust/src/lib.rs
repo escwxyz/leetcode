@@ -1,4 +1,6 @@
 mod angry_professor;
+mod the_hurdle_race;
+mod picking_numbers;
 mod cats_and_mouse;
 mod caesar_cipher;
 mod design_pdf_viewer;
