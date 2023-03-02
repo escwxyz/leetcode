@@ -1,8 +1,9 @@
 /**
  * @param image - 2D array representing image
  * @returns 2D array of modified image
- * Problem:
- * https://leetcode.cn/problems/flipping-an-image/
+ *
+ * Problem 832:
+ * https://leetcode.com/problems/flipping-an-image/
  */
 export const flipAndInvertImage = (image: number[][]): number[][] => {
 	for (let i = 0; i < image.length; i++) {

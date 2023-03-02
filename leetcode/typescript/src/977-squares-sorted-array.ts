@@ -1,3 +1,10 @@
+/**
+ * @param nums - Sorted Array
+ * @returns Squares of array
+ *
+ * Problem 977:
+ * https://leetcode.com/problems/squares-of-a-sorted-array/
+ */
 export const sortedSquares = (nums: number[]): number[] => {
 	let result = new Array(nums.length)
 	let left = 0
@@ -7,11 +14,9 @@ export const sortedSquares = (nums: number[]): number[] => {
 
 	while (left <= right) {
 		if (Math.abs(nums[left]) > Math.abs(nums[right])) {
-			result[index] = nums[left] ** 2
-			left++
+			result[index] = nums[left++] ** 2
 		} else {
-			result[index] = nums[right] ** 2
-			right--
+			result[index] = nums[right--] ** 2
 		}
 		index--
 	}

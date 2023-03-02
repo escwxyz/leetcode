@@ -1,3 +1,11 @@
+/**
+ * @param words - Array of strings
+ * @returns First palindromic string from the array
+ *
+ * Problem 2108:
+ * https://leetcode.com/problems/find-first-palindromic-string-in-the-array/
+ */
+
 export const firstPalindrome = (words: string[]): string => {
 	const a = words.find((value) => isPalindrome(value))
 

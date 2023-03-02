@@ -2,8 +2,8 @@
  * @param nums - Array
  * @returns Array after operation
  *
- * Problem:
- * https://leetcode.cn/problems/move-zeroes/
+ * Problem 283:
+ * https://leetcode.com/problems/move-zeroes/
  */
 export const moveZeroes = (nums: number[]): number[] => {
 	let fast = 0
@@ -11,8 +11,7 @@ export const moveZeroes = (nums: number[]): number[] => {
 
 	while (fast < nums.length) {
 		if (nums[fast] !== 0) {
-			nums[slow] = nums[fast]
-			slow++
+			nums[slow++] = nums[fast]
 		}
 		fast++
 	}

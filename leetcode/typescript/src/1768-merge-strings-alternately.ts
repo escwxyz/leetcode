@@ -1,3 +1,13 @@
+/**
+ * @param word1 - String one
+ * @param word2 - String two
+ * @returns Merged string
+ *
+ * Problem 1768:
+ *
+ * https://leetcode.com/problems/merge-strings-alternately/
+ */
+
 export const mergeAlternately = (word1: string, word2: string): string => {
 	let str = ''
 	let p1 = 0

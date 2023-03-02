@@ -3,7 +3,7 @@
  * @returns Length of array after removing duplicates
  *
  * Problem 26
- * https://leetcode.cn/problems/remove-duplicates-from-sorted-array/
+ * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
  */
 export const removeDuplicates = (nums: number[]): number => {
 	if (nums.length < 2) {
@@ -13,8 +13,7 @@ export const removeDuplicates = (nums: number[]): number => {
 	let b = 0
 	while (b < nums.length) {
 		if (nums[a] !== nums[b]) {
-			a++
-			nums[a] = nums[b]
+			nums[++a] = nums[b]
 		}
 		b++
 	}

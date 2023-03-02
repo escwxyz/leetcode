@@ -4,8 +4,8 @@
  * @param m - Length of array one, not including extra 0
  * @param n - Length of array two
  *
- * Problem:
- * https://leetcode.cn/problems/merge-sorted-array/submissions/
+ * Problem 88:
+ * https://leetcode.com/problems/merge-sorted-array/submissions/
  */
 export const mergeSortedArray = (
 	nums1: number[],
@@ -13,13 +13,21 @@ export const mergeSortedArray = (
 	m: number,
 	n: number
 ): void => {
-	let last: number = m + n - 1
+	let p = m + n - 1
+	let p1 = m - 1
+	let p2 = n - 1
 
-	while (n) {
-		if (m == 0 || nums1[m - 1] <= nums2[n - 2]) {
-			nums1[last--] = nums2[--n]
+	while (p1 >= 0 && p2 >= 0 && p1 <= p) {
+		if (nums1[p1] < nums2[p2]) {
+			nums1[p] = nums2[p2--]
 		} else {
-			nums1[last--] = nums1[--m]
+			nums1[p] = nums1[p1--]
+		}
+		p--
+	}
+	if (p2 >= 0) {
+		for (let i = 0; i <= p2; i++) {
+			nums1[i] = nums2[i]
 		}
 	}
 }

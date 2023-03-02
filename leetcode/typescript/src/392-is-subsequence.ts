@@ -2,9 +2,9 @@
  * @param t - Target string
  * @param s - Search string
  * @returns If target string includes search string
-		 *
- * Problem:
- * https://leetcode.cn/problems/is-subsequence
+ *
+ * Problem 392:
+ * https://leetcode.com/problems/is-subsequence
  */
 
 export const isSubSequence = (t: string, s: string): boolean => {

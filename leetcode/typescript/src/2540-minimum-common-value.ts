@@ -3,8 +3,8 @@
  * @param nums2 - Array two
  * @returns Minimum common value
  *
- * Problem:
- * https://leetcode.cn/problems/minimum-common-value/
+ * Problem 2540:
+ * https://leetcode.com/problems/minimum-common-value/
  */
 export const getCommon = (nums1: number[], nums2: number[]): number => {
 	let p1: number = 0

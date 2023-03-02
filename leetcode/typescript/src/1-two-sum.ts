@@ -3,6 +3,7 @@
  * @param target - Target number
  * @returns Indice of two numbers whose sum is equal to target number
  *
+ * Problem 1:
  * https://leetcode.com/problems/two-sum/
  */
 export const twoSum = (nums: number[], target: number): number[] => {

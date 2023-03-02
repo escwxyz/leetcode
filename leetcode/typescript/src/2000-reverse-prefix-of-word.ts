@@ -3,8 +3,8 @@
  * @param ch - Target char
  * @returns Modified string
  *
- * Problem:
- * https://leetcode.cn/problems/reverse-prefix-of-word/
+ * Problem 2000:
+ * https://leetcode.com/problems/reverse-prefix-of-word/
  */
 
 export const reversePrefix = (word: string, ch: string): string => {
@@ -20,10 +20,8 @@ export const reversePrefix = (word: string, ch: string): string => {
 
 	while (left < right) {
 		const temp = arr[left]
-		arr[left] = arr[right]
-		arr[right] = temp
-		left++
-		right--
+		arr[left++] = arr[right]
+		arr[right--] = temp
 	}
 
 	return arr.join('') + word.slice(index + 1)
