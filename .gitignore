@@ -1,6 +1,2 @@
-comprehensive-rust/target
 .DS_Store
-rustlings/.all-contributorsrc
-rustlings/.editorconfig
-hackerrank/rust/target
-hackerrank/typescript/node_modules
+Rust/target
