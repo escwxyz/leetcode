@@ -28,4 +28,7 @@ if (import.meta.vitest) {
 	it('test one', () => {
 		expect(moveZeroes([0, 1, 0, 3, 12])).toStrictEqual([1, 3, 12, 0, 0])
 	})
+	it('test two', () => {
+		expect(moveZeroes([0])).toStrictEqual([0])
+	})
 }
