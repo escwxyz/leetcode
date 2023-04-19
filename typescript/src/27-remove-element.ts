@@ -25,7 +25,7 @@ if (import.meta.vitest) {
 	const { it, expect } = import.meta.vitest
 
 	it('test one', () => {
-		expect(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2)).toBe(2)
+		expect(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2)).toBe(5)
 	})
 
 	it('test two', () => {
