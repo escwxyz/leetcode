@@ -25,7 +25,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache-dependency-path: ./typescript/package.json
+        cache-dependency-path: ./typescript/pnpm-lock.yaml
         cache: 'pnpm'
     - run: pnpm install --frozen-lockfile
       working-directory: ./typescript
