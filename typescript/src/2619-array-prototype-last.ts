@@ -4,7 +4,7 @@ declare global {
   }
 }
 Array.prototype.last = function () {
-  return this.length > 0 ? this.pop() : -1
+  return this[this.length - 1] ?? -1
 }
 
 if (import.meta.vitest) {
@@ -14,6 +14,9 @@ if (import.meta.vitest) {
   })
   test('test two', () => {
     expect([1, 2, 3].last()).toBe(3)
+  })
+  test('test three', () => {
+    expect([0, 0, 0].last()).toBe(0)
   })
 }
 
