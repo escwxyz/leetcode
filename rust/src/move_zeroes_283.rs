@@ -26,3 +26,26 @@ impl Solution {
         });
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_one() {
+        let mut arr = vec![0, 1, 0, 3, 12];
+
+        Solution::move_zeroes(&mut arr);
+
+        assert_eq!(vec![1, 3, 12, 0, 0], arr);
+    }
+
+    #[test]
+    fn test_two() {
+        let mut arr = vec![0];
+
+        Solution::move_zeroes(&mut arr);
+
+        assert_eq!(vec![0], arr);
+    }
+}
